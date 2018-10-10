@@ -26,3 +26,30 @@ notify создает эти уведомления.
 Если в базе данных существует напоминание с текущим временем и датой (с точностью до минут),
 
 то notify отправляет это напоминание в центр уведомлений windows.
+
+#Импорты
+
+from PyQt5.QtWidgets import *
+
+from PyQt5.QtGui import QIcon
+
+from PyQt5.QtCore import QDate
+
+from multiprocessing import Process
+
+import time
+
+import sys
+
+from datetime import datetime
+
+import sqlite3
+
+import os
+
+import win32con (он находится в pywin32)
+
+import win32gui
+
+from win32api import GetModuleHandle
+
